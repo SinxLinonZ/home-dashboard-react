@@ -8,3 +8,9 @@
     grid-template-columns: repeat(20, 96px);
     grid-template-rows: repeat(20, 54px);
 }
+
+#weather {
+    grid-area: 14 / 1 / 19 / 6;
+    margin: 15px;
+    width: 440px;
+}

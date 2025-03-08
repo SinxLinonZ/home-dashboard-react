@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react'
-import './Calendar.css'
+import React, { useState, useEffect } from 'react';
+import './Calendar.css';
 
 function Calendar() {
-  const [today, setToday] = useState(new Date())
+  const [today, setToday] = useState(new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const now = new Date()
+      const now = new Date();
       if (now.getDate() !== today.getDate()) {
-        setToday(now)
+        setToday(now);
       }
-    }, 1000)
+    }, 1000);
 
-    return () => clearInterval(timer)
-  }, [today])
+    return () => clearInterval(timer);
+  }, [today]);
 
-  const month = today.toLocaleString('default', { month: 'long' })
-  const year = today.getFullYear()
-  const daysInMonth = new Date(year, today.getMonth() + 1, 0).getDate()
-  const firstDayOfMonth = new Date(year, today.getMonth(), 1).getDay()
+  const month = today.toLocaleString('default', { month: 'long' });
+  const year = today.getFullYear();
+  const daysInMonth = new Date(year, today.getMonth() + 1, 0).getDate();
+  const firstDayOfMonth = new Date(year, today.getMonth(), 1).getDay();
 
-  const daysHeadings = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-  const days = []
+  const daysHeadings = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const days = [];
   for (let i = 1; i <= daysInMonth; i++) {
-    days.push(i)
+    days.push(i);
   }
 
   return (
@@ -47,7 +47,7 @@ function Calendar() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Calendar
+export default Calendar;
