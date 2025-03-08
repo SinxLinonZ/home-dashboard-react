@@ -12,7 +12,7 @@ function Weather() {
       width: fit-content;
       background-color: #242424;
       transform-origin: top left;
-      transform: scale(1.5);
+      transform: scale(1.65);
     }
     #ww_e1234bbda49f9 {
       width: 440px;
