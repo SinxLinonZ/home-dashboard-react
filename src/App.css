@@ -8,25 +8,3 @@
     grid-template-columns: repeat(20, 96px);
     grid-template-rows: repeat(20, 54px);
 }
-
-#weather_current {
-    grid-area: 16 / 1 / 21 / 6;
-    margin: 15px;
-    padding: 5px;
-    font-weight: bold;
-}
-
-#weather_forecast {
-    grid-area: 1 / 6 / 6 / 21;
-    margin: 15px;
-    font-weight: bold;
-}
-
-.temp .day, .temp .night, .date {
-    font-size: 1.5em;
-}
-
-.svg-wrapper.wide {
-    transform: scale(1.4);
-    transform-origin: top right;
-}
