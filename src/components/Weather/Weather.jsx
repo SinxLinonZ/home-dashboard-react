@@ -29,7 +29,7 @@ function Weather() {
     <>
       <iframe
         id="weather"
-        srcdoc={srcDoc_weather}
+        srcDoc={srcDoc_weather}
         style={{ border: 'none', width: '100%', height: '100%', margin: '0', padding: '0' }}
       ></iframe>
     </>
